@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0f1b86c0-5b59-4ce1-8227-79b76703051c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,31 +19,37 @@
         <counts>
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="README" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="ini" value="1" />
           <entry key="py" value="9" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="57" />
-          <entry key="py" value="2952" />
+          <entry key="gitignore" value="14" />
+          <entry key="py" value="4153" />
+          <entry key="txt" value="1176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3009" />
+          <entry key="PLAIN_TEXT" value="1190" />
+          <entry key="Python" value="4210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -59,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="288">
               <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding>
                 <marker date="1538097728384" expanded="true" signature="49:54" ph="..." />
@@ -73,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
                 <marker date="1538119885582" expanded="true" signature="215:216" ph="..." />
@@ -83,29 +89,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+        <entry file="file://$PROJECT_DIR$/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="144">
+              <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
               <folding>
-                <element signature="e#126#166#0" expanded="true" />
-                <marker date="1538118263756" expanded="true" signature="306:311" ph="..." />
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1538193389869" expanded="true" signature="108:109" ph="..." />
+                <marker date="1538193389869" expanded="true" signature="108:113" ph="..." />
+                <marker date="1538193389869" expanded="true" signature="780:785" ph="..." />
+                <marker date="1538193389869" expanded="true" signature="1419:1421" ph="..." />
+                <marker date="1538193389869" expanded="true" signature="1446:1846" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="396">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <marker date="1538126539072" expanded="true" signature="107:108" ph="..." />
-                <marker date="1538126539072" expanded="true" signature="107:112" ph="..." />
-                <marker date="1538126539072" expanded="true" signature="605:610" ph="..." />
+                <element signature="e#126#166#0" expanded="true" />
+                <marker date="1538202018150" expanded="true" signature="478:483" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/学习笔记.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -126,10 +152,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="F:/venv/flask001_blog/Lib/site-packages/flask_sqlalchemy/__init__.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/学习笔记.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -150,6 +178,11 @@
             <path>
               <item name="flask001_blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask001_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask001_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask001_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flask001_blog" type="b2602c69:ProjectViewProjectNode" />
@@ -220,12 +253,24 @@
     <entry file="file://C:/Program Files/Python36/Lib/idlelib/history.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://F:/venv/flask001_blog/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="788" column="50" selection-start-line="788" selection-start-column="50" selection-end-line="788" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/alembic.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="288">
           <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <marker date="1538097728384" expanded="true" signature="49:54" ph="..." />
@@ -234,17 +279,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/venv/flask001_blog/Lib/site-packages/flask_sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="788" column="50" selection-start-line="788" selection-start-column="50" selection-end-line="788" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <marker date="1538119885582" expanded="true" signature="215:216" ph="..." />
@@ -252,27 +290,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="144">
+          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
           <folding>
-            <element signature="e#126#166#0" expanded="true" />
-            <marker date="1538118263756" expanded="true" signature="306:311" ph="..." />
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1538193389869" expanded="true" signature="108:109" ph="..." />
+            <marker date="1538193389869" expanded="true" signature="108:113" ph="..." />
+            <marker date="1538193389869" expanded="true" signature="780:785" ph="..." />
+            <marker date="1538193389869" expanded="true" signature="1419:1421" ph="..." />
+            <marker date="1538193389869" expanded="true" signature="1446:1846" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="396">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1538126539072" expanded="true" signature="107:108" ph="..." />
-            <marker date="1538126539072" expanded="true" signature="107:112" ph="..." />
-            <marker date="1538126539072" expanded="true" signature="605:610" ph="..." />
+            <element signature="e#126#166#0" expanded="true" />
+            <marker date="1538202018150" expanded="true" signature="478:483" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学习笔记.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/README">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
