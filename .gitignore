@@ -1,1 +1,4 @@
 migrations/
+.idea/
+.vs/
+__pycache__/

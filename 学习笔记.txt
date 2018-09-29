@@ -37,7 +37,7 @@
                         a_id = db.Column(
                             db.Integer, #  此处可用db.String(45)
                             db.ForeignKey('as.id'))
-6.
+6.对于Many to Many关系
 7.
 8.
 9.
