@@ -2,7 +2,7 @@
 2.上述文件在学习前期可理解为django中的数据库设置》view》models》manage.py
 3.models.py中的类表，需要加上def __init__ 和 def __repr__ 前者初始化这个表，后者用于
     shell中查看
-4.flask不想django有傻瓜式的启动配置，所有的东西包括命令行都需要手动加载，所以在进行
+4.flask不像django有傻瓜式的启动配置，所有的东西包括命令行都需要手动加载，所以在进行
     one to many, many to many等数据库关系之前，建议先安装好flask-migrate
     在manage.py中，定义如下：
                     import main
