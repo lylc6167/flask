@@ -2,7 +2,7 @@
 
 
 class Config(object):
-    pass
+    SECRET_KEY = 'XpG/bck8hgX9o4AJh87dLw=='  # python随机生成
 
 
 class ProdConfig(Config):

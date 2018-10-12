@@ -1,8 +1,19 @@
-from flask import render_template
+from flask import render_template, Blueprint
 from sqlalchemy import func
 
-from main import app
-from models import db, User, Post, Tag, Comment, posts_tags
+from uuid import uuid4
+import datetime
+from os import path
+
+from flask001_blog.models import db, User, Post, Tag, Comment, posts_tags
+from flask001_blog.forms import CommentForm
+
+
+blog_blueprint = Blueprint(
+    'blog',
+    __name__,
+    template_folder=path.join(path.pardir, 'templates', 'blog'),
+    url_prefix='/blog')
 
 
 def sidebar_data():
@@ -18,8 +29,8 @@ def sidebar_data():
     return recent, top_tags
 
 
-@app.route('/')
-@app.route('/<int:page>')
+@blog_blueprint.route('/')
+@blog_blueprint.route('/<int:page>')
 def home(page=1):
     posts = Post.query.order_by(
         Post.created_date.desc()
@@ -27,28 +38,39 @@ def home(page=1):
 
     recent, top_tags = sidebar_data()
 
-    return  render_template('home.html',
-                            posts=posts,
-                            recent=recent,
-                            top_tags=top_tags)
+    return render_template('home.html',
+                           posts=posts,
+                           recent=recent,
+                           top_tags=top_tags)
 
 
-@app.route('/post/<string:post_id>')
+@blog_blueprint.route('/post/<string:post_id>', methods=('GET', 'POST'))
 def post(post_id):
 
-    post = db.session.query(Post).get_or_404(post_id)
+    form = CommentForm()
+    if form.validate_on_submit():
+        new_comment = Comment(id=str(uuid4()),
+                              name=form.name.data)
+        new_comment.text = form.text.data
+        new_comment.created_time = datetime.datetime.now()
+        new_comment.post_id = post_id
+        db.session.add(new_comment)
+        db.session.commit()
+
+    post = Post.query.get_or_404(post_id)
     tags = post.tags
-    comments = post.comments.order_by(Comment.date.desc()).all()
+    comments = post.comments.order_by(Comment.created_time.desc()).all()
     recent, top_tags = sidebar_data()
     return render_template('post.html',
                            post=post,
                            tags=tags,
                            comments=comments,
+                           form=form,
                            recent=recent,
                            top_tags=top_tags)
 
 
-@app.route('/tag/<string:tag_name>')
+@blog_blueprint.route('/tag/<string:tag_name>')
 def tag(tag_name):
 
     tag = db.session.query(Tag).filter_by(name=tag_name).first_or_404()
@@ -62,7 +84,7 @@ def tag(tag_name):
                            top_tags=top_tags)
 
 
-@app.route('/user/<string:username>')
+@blog_blueprint.route('/user/<string:username>')
 def user(username):
 
     user = db.session.query(User).filter_by(username=username).first_or_404()

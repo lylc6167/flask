@@ -1,8 +1,11 @@
 from flask_sqlalchemy import SQLAlchemy
-from main import app
+# from flask001_blog.__init__ import app # 初始化后不需要了
+# from sqlalchemy import *  # 此方法可以省略部分代码，尚未测试
 
 
-db = SQLAlchemy(app)
+db = SQLAlchemy()  # 在pycharm2017中可以正常使用，并且db.Column可以正常提示
+
+# a=Column(String(45),)
 
 
 class User(db.Model):
@@ -51,7 +54,8 @@ class Post(db.Model):
         secondary='posts_tags',
         backref=db.backref('posts', lazy='dynamic'))
 
-    def __init__(self, title):
+    def __init__(self, id, title):
+        self.id = id
         self.title = title
 
     def __repr__(self):  # 命令行修改语句
@@ -68,7 +72,8 @@ class Comment(db.Model):
 
     post_id = db.Column(db.String(45), db.ForeignKey('posts.id'))
 
-    def __init__(self,name):
+    def __init__(self, id, name):
+        self.id = id
         self.name = name
 
     def __repr__(self):
@@ -81,7 +86,8 @@ class Tag(db.Model):
     id = db.Column(db.String(45), primary_key=True)
     name = db.Column(db.String(255))
 
-    def __init__(self, name):
+    def __init__(self, id, name):
+        self.id = id
         self.name = name
 
     def __repr__(self):
