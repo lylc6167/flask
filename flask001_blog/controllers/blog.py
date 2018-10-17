@@ -13,7 +13,7 @@ blog_blueprint = Blueprint(
     'blog',
     __name__,
     template_folder=path.join(path.pardir, 'templates', 'blog'),
-    url_prefix='/blog')
+    url_prefix='/blog')  # 最后一个参数为路由前缀，localhost/blog/<ID>
 
 
 def sidebar_data():

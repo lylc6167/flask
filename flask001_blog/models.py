@@ -1,7 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 # from flask001_blog.__init__ import app # 初始化后不需要了
 # from sqlalchemy import *  # 此方法可以省略部分代码，尚未测试
-
+from .extensions import bcrypt
 
 db = SQLAlchemy()  # 在pycharm2017中可以正常使用，并且db.Column可以正常提示
 
@@ -20,10 +20,18 @@ class User(db.Model):
         backref='users',
         lazy='dynamic')
 
+    # 教程中这个函数写在__init__之后导致函数无法使用，调整后通过
+    def set_password(self, password):
+        return bcrypt.generate_password_hash(password)
+
+    def check_password(self, password):
+        return bcrypt.check_password_hash(self.password, password)
+
     def __init__(self, id, username, password):
         self.id = id
         self.username = username
-        self.password = password
+        # byte和str互相转化？？？,加个decode()就解决了
+        self.password = self.set_password(password).decode()
 
     def __repr__(self):
         return "<Model User '{}'>".format(self.username)
